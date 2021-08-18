@@ -1,6 +1,8 @@
-const notes = require("express").Router();
-const { v4: uuidv4 } = require("uuid");
+const express = require('express');
+const notes = express.Router();
+const fs = require("fs");
 const { readAndAppend, readFromFile } = require("../helpers/fsUtils");
+const { v4: uuidv4 } = require("uuid");
 
 // Get route for the info in db.json
 notes.get("/", (req, res) =>
@@ -13,7 +15,7 @@ notes.post("/", (req, res) => {
   const { title, text } = req.body;
 
   // If all the required properties are present
-  if (title && text) {
+  if (req.body) {
     // Variable for the object we will save
     const newNote = {
       title,
@@ -21,7 +23,7 @@ notes.post("/", (req, res) => {
       note_id: uuidv4(),
     };
 
-    readAndAppend(newNote, "./db/feedback.json");
+    readAndAppend(newNote, "./db/db.json");
 
     const response = {
       status: "success",
@@ -30,7 +32,7 @@ notes.post("/", (req, res) => {
 
     res.json(response);
   } else {
-    res.json("Error in posting feedback");
+    res.json("Error in posting notes");
   }
 });
 
