@@ -22,7 +22,7 @@ notes.post("/", (req, res) => {
       text,
       note_id: uuidv4(),
     };
-
+// Adds the new note to the database in db.json
     readAndAppend(newNote, "./db/db.json");
 
     const response = {
@@ -35,7 +35,7 @@ notes.post("/", (req, res) => {
     res.json("Error in posting notes");
   }
 });
-
+// Delete function that will remove a note from the left side.
 notes.delete("/:id", (req, res) => {
   const { id } = req.params;
   const note = JSON.parse(fs.readFileSync("./db/db.json", "utf8"));
