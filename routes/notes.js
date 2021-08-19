@@ -1,7 +1,7 @@
 const express = require('express');
 const notes = express.Router();
 const fs = require("fs");
-const { readAndAppend, readFromFile } = require("../helpers/fsUtils");
+const { readAndAppend, readFromFile, writeToFile } = require("../helpers/fsUtils");
 const { v4: uuidv4 } = require("uuid");
 
 // Get route for the info in db.json
@@ -35,5 +35,17 @@ notes.post("/", (req, res) => {
     res.json("Error in posting notes");
   }
 });
+
+notes.delete("/:id", (req, res) => {
+  const { id } = req.params;
+  const note = JSON.parse(fs.readFileSync("./db/db.json", "utf8"));
+
+  const indexOfNotes = note.findIndex(note => note.id === id);
+
+  note.splice(indexOfNotes, 1);
+
+  writeToFile("./db/db.json", note);
+  return res.send();
+})
 
 module.exports = notes;

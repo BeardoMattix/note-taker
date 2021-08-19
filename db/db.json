@@ -4,23 +4,8 @@
         "text": "Test text"
     },
     {
-        "title": "This is a TEST",
-        "text": "Testing this shit.\n",
-        "note_id": "45139dac-8a87-4b7f-b5c5-88780170f86e"
-    },
-    {
-        "title": "Rendering",
-        "text": "This is a test to see if the notes are saving to the db.json file.",
-        "note_id": "d5e757ed-d1ec-454f-a16f-435ef385adff"
-    },
-    {
-        "title": "Homework",
-        "text": "Testing database file",
-        "note_id": "fc9e016f-6ed6-4e81-9b97-b94818727278"
-    },
-    {
-        "title": "To Do",
-        "text": "1. Take out the trash\n2. Feed the cat\n3. Finish coding homework",
-        "note_id": "85617463-01a4-4d0b-85e3-382b743edb04"
+        "title": "This is a new note",
+        "text": "Saving this note as a test.",
+        "note_id": "032d045f-460c-4859-8dac-554a0c985ca4"
     }
 ]
