@@ -1,1 +1,12 @@
-[]
+[
+    {
+        "title": "Note",
+        "text": "Note",
+        "note_id": "3449c057-7f21-418d-8cc6-8025db91bbe6"
+    },
+    {
+        "title": "another note",
+        "text": "Note",
+        "note_id": "d2da78ae-5e68-426c-8b80-931194221826"
+    }
+]
