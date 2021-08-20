@@ -1,16 +1,1 @@
-[
-    {
-        "title": "Test Title",
-        "text": "Test text"
-    },
-    {
-        "title": "This is a new note",
-        "text": "Saving this note as a test.",
-        "note_id": "032d045f-460c-4859-8dac-554a0c985ca4"
-    },
-    {
-        "title": "To Do",
-        "text": "Feed the cat\nTake out the trash\nFix the shower head\nGo to the grocery store",
-        "note_id": "d8dfd1d2-4e5d-48f7-b3a9-7a1c5861875d"
-    }
-]
+[]
