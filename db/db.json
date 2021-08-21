@@ -1,22 +1,12 @@
 [
     {
-        "title": "New ",
-        "text": "note",
-        "note_id": "8646e0b5-b0b6-45b0-a88b-9fc579c670e2"
+        "title": "To Do:",
+        "text": "1. Take out the trash\n2. Feed the cat\n3. Finish coding homework",
+        "note_id": "c5078c02-202c-489b-afa6-6357cbbb6f51"
     },
     {
-        "title": "Test",
-        "text": "note",
-        "note_id": "e7bbcdd0-bde5-41a8-b859-3d0ab825a12f"
-    },
-    {
-        "title": "New",
-        "text": "Test",
-        "note_id": "fa49bab6-3f8e-406d-b8ca-3ee3bf5ec33f"
-    },
-    {
-        "title": "Yay!",
-        "text": "This shit finally works!",
-        "note_id": "4bfef7bc-e352-4dbb-a4c6-bdbda05ce695"
+        "title": "TEST",
+        "text": "this is a test to check if the notes are rendering the right way. ",
+        "note_id": "b4eb790c-2e62-4dc3-8a54-cff72bf006e9"
     }
 ]
