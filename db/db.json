@@ -1,27 +1,22 @@
 [
     {
-        "title": "Hello",
-        "text": "Hey y'all!",
-        "note_id": "ae08d399-46d5-4b60-89a7-9a93fccb14f1"
+        "title": "New ",
+        "text": "note",
+        "note_id": "8646e0b5-b0b6-45b0-a88b-9fc579c670e2"
     },
     {
-        "title": "New Note",
-        "text": "This is a new note!",
-        "note_id": "be6aee3d-ab9c-42b2-8c63-1f9056158c13"
-    },
-    {
-        "title": "To Do List",
-        "text": "Take out the trash\nfeed the cat\ndo the dishes",
-        "note_id": "5f23ff23-2123-4dbe-a689-5e6324ef5f05"
+        "title": "Test",
+        "text": "note",
+        "note_id": "e7bbcdd0-bde5-41a8-b859-3d0ab825a12f"
     },
     {
         "title": "New",
-        "text": "note",
-        "note_id": "b9915b87-17b9-407d-b1ea-f13ba267e6f2"
+        "text": "Test",
+        "note_id": "fa49bab6-3f8e-406d-b8ca-3ee3bf5ec33f"
     },
     {
-        "title": "New ",
-        "text": "note",
-        "note_id": "a095df15-5511-4eb1-8809-439f588ec23b"
+        "title": "Yay!",
+        "text": "This shit finally works!",
+        "note_id": "4bfef7bc-e352-4dbb-a4c6-bdbda05ce695"
     }
 ]
