@@ -4,7 +4,7 @@
 ## <p align="center">A Heroku  application for taking notes.</p>
 
 ## Link to Deployed Site
-[Note Taker](https://dry-garden-33434.herokuapp.com/notes)
+[Note Taker](https://dry-garden-33434.herokuapp.com/)
 
 ## Table of Contents
   * [Description](#description)
