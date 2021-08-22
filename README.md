@@ -40,6 +40,7 @@ This application uses Node.js, Express, and Heroku to connect the front-end and 
 ## Challenges
 
 * Creating the correct GET and POST requests for the database.
+* Learning how to create a DELETE request.
 * Getting the saved notes to render in the right hand side of the page upon click.
 
 ## Usage
