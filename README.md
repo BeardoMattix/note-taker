@@ -11,7 +11,6 @@
   * [Installation](#installation)
   * [Challenges](#challenges)
   * [Usage](#usage)
-  * [Test](#test)
   * [License](#license)
   * [Questions](#questions)
 
@@ -25,6 +24,7 @@ This application allows the user to create and edit notes. It was built with Jav
 * JavaScript
 * Node.js
 * Express
+* UUID V4
 * Heroku
 
 ## Functionality
@@ -48,17 +48,11 @@ This application uses Node.js, Express, and Heroku to connect the front-end and 
 * Install Node.js
 * Enter 'npm init' in command line
 * Enter 'npm i' in the command line
-* Enter 'node index.js' in the command line
-
-## Test 
-
-https://user-images.githubusercontent.com/82903201/129487048-df7b2739-abe7-4b0f-84ce-e7bde5003261.mp4
-
-This application has been thoroughly tested using the "Jest" npm.
+* Enter 'node server.js' in the command line
 
 ## Future Development
 * Improve the overall appearance of the html page.
-* Add morew information to each role to have a more robust team profile page.
+* Make the site more dynamic and allow users to share notes with other users and devices.
 
 ## Questions
 * Take a look at my GitHub profile to see other projects: 
