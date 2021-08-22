@@ -17,38 +17,32 @@
 
 ## Description
 
-This application allows the user to easily add and update an oganizational team profile page from the command line. It uses node.js, JavaScript, and the Iquirer and Jest npm packages to dynamically render team information based on specific roles. Styles are created using a combination of CSS and Bulma.
+This application allows the user to create and edit notes. It was built with JavaScript, Node.js, Express, and Heroku. When the user navigates to the application, they see a landing page with a "Get Started" button. From there, they can navigate to the note taking page and start creating notes. Only notes with a title and body can be saved. Once a note is created and saved, the user can click on it in the notes list to reopen and edit that note. 
  
 ## Technologies
 * HTML
-* CSS and Bulma
+* CSS
 * JavaScript
 * Node.js
-* NPM "Inquirer"
-* NPM "Jest"
+* Express
+* Heroku
 
 ## Functionality
 
-This application uses Node.js, the 'Jest' npm, and the 'Inquirer' npm to create a team profile html page by inputing information in the command line. When the application is initialized, the user is asked the name of the team member they are adding. The user then selects a role (manager, engineer, or intern) and is presented with a set of questions about that team member. The manager, engineer, and intern classes all have an additional question that is specific to that role. Once the user is finished inputting information about a team member, they are given the option to add more members. If they select "Yes" the application starts over. If they select "NO" the application terminates and creates an HTML page in the 'dist' folder.
+This application uses Node.js, Express, and Heroku to connect the front-end and back end functionality. Express creates and maintains the database where all new notes are saved, updated, and deleted. The application is hosted through Heroku. The user clicks the "Get Started" button on the landing page, is taken to the note taking page, and can start creating noted by adding a title and body text to their note. Once a new note has a title and a body, a save icon appears and the note can be added to the notes list on the left hand side of the page. Users can delete notes that they no longer need by clicking on the trash can icon. 
 
 ## Demo
-https://user-images.githubusercontent.com/82903201/129486926-738adc84-e5ad-46c0-92e5-74a90765309f.mp4
 
-## Example HTML Page
-#### The example Team Profile was generated using the Team Profile Generator application I built. The HTML file represented in these screentshots is located in the "dist" folder.
-<img width="1136" alt="Screen Shot 2021-08-15 at 1 12 26 PM" src="https://user-images.githubusercontent.com/82903201/129486659-30a53200-04c7-4db7-b17e-3fc939f2fab7.png">
 
 ## Challenges
 
-* Interacting with multiple objects that reference each other.
-* Getting all of the information to render on the page correctly.
-* Creating the "addAnotherMember" function to allow the user to add more than one team member at a time.
-* Writing tests!
+* Creating the correct GET and POST requests for the database.
+* Getting the saved notes to render in the right hand side of the page upon click.
 
 ## Usage
-* Use this app to create a team profile page from the command line.
-* Use the code to understand the basics of Object Oriented Programming.
-* Use the code to understand how to write and run tests. 
+* Use this app to keep track of daily tasks.
+* Use the code to understand the basics of Express routes.
+* Use the code to understand how to create GET, POST, and DELETE requests. 
 
 ## Installation
 * Install Node.js
