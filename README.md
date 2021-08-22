@@ -1,130 +1,77 @@
-# 11 Express.js: Note Taker
-
-## Your Task
-
-Your assignment is to modify starter code to create an application called Note Taker that can be used to write and save notes. This application will use an Express.js back end and will save and retrieve note data from a JSON file.
-
-The application’s front end has already been created. It's your job to build the back end, connect the two, and then deploy the entire application to Heroku.
 
 
-## User Story
+# <p align="center">Welcome to my Note Taker!</p> 
+## <p align="center">A Heroku  application for taking notes.</p>
 
-```
-AS A small business owner
-I WANT to be able to write and save notes
-SO THAT I can organize my thoughts and keep track of tasks I need to complete
-```
+## Link to Deployed Site
+[Note Taker](https://dry-garden-33434.herokuapp.com/notes)
 
+## Table of Contents
+  * [Description](#description)
+  * [Installation](#installation)
+  * [Challenges](#challenges)
+  * [Usage](#usage)
+  * [Test](#test)
+  * [License](#license)
+  * [Questions](#questions)
 
-## Acceptance Criteria
+## Description
 
-```
-GIVEN a note-taking application
-WHEN I open the Note Taker
-THEN I am presented with a landing page with a link to a notes page
-WHEN I click on the link to the notes page
-THEN I am presented with a page with existing notes listed in the left-hand column, plus empty fields to enter a new note title and the note’s text in the right-hand column
-WHEN I enter a new note title and the note’s text
-THEN a Save icon appears in the navigation at the top of the page
-WHEN I click on the Save icon
-THEN the new note I have entered is saved and appears in the left-hand column with the other existing notes
-WHEN I click on an existing note in the list in the left-hand column
-THEN that note appears in the right-hand column
-WHEN I click on the Write icon in the navigation at the top of the page
-THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column
-```
+This application allows the user to easily add and update an oganizational team profile page from the command line. It uses node.js, JavaScript, and the Iquirer and Jest npm packages to dynamically render team information based on specific roles. Styles are created using a combination of CSS and Bulma.
+ 
+## Technologies
+* HTML
+* CSS and Bulma
+* JavaScript
+* Node.js
+* NPM "Inquirer"
+* NPM "Jest"
 
+## Functionality
 
-## Mock-Up
+This application uses Node.js, the 'Jest' npm, and the 'Inquirer' npm to create a team profile html page by inputing information in the command line. When the application is initialized, the user is asked the name of the team member they are adding. The user then selects a role (manager, engineer, or intern) and is presented with a set of questions about that team member. The manager, engineer, and intern classes all have an additional question that is specific to that role. Once the user is finished inputting information about a team member, they are given the option to add more members. If they select "Yes" the application starts over. If they select "NO" the application terminates and creates an HTML page in the 'dist' folder.
 
-The following images show the web application's appearance and functionality:
+## Demo
+https://user-images.githubusercontent.com/82903201/129486926-738adc84-e5ad-46c0-92e5-74a90765309f.mp4
 
-![Existing notes are listed in the left-hand column with empty fields on the right-hand side for the new note’s title and text.](./Assets/11-express-homework-demo-01.png)
+## Example HTML Page
+#### The example Team Profile was generated using the Team Profile Generator application I built. The HTML file represented in these screentshots is located in the "dist" folder.
+<img width="1136" alt="Screen Shot 2021-08-15 at 1 12 26 PM" src="https://user-images.githubusercontent.com/82903201/129486659-30a53200-04c7-4db7-b17e-3fc939f2fab7.png">
 
-![Note titled “Balance accounts” reads, “Balance account books by end of day Monday,” with other notes listed on the left.](./Assets/11-express-homework-demo-02.png)
+## Challenges
 
+* Interacting with multiple objects that reference each other.
+* Getting all of the information to render on the page correctly.
+* Creating the "addAnotherMember" function to allow the user to add more than one team member at a time.
+* Writing tests!
 
-## Getting Started
+## Usage
+* Use this app to create a team profile page from the command line.
+* Use the code to understand the basics of Object Oriented Programming.
+* Use the code to understand how to write and run tests. 
 
-On the back end, the application should include a `db.json` file that will be used to store and retrieve notes using the `fs` module.
+## Installation
+* Install Node.js
+* Enter 'npm init' in command line
+* Enter 'npm i' in the command line
+* Enter 'node index.js' in the command line
 
-The following HTML routes should be created:
+## Test 
 
-* `GET /notes` should return the `notes.html` file.
+https://user-images.githubusercontent.com/82903201/129487048-df7b2739-abe7-4b0f-84ce-e7bde5003261.mp4
 
-* `GET *` should return the `index.html` file.
+This application has been thoroughly tested using the "Jest" npm.
 
-The following API routes should be created:
+## Future Development
+* Improve the overall appearance of the html page.
+* Add morew information to each role to have a more robust team profile page.
 
-* `GET /api/notes` should read the `db.json` file and return all saved notes as JSON.
+## Questions
+* Take a look at my GitHub profile to see other projects: 
+[My GitHub Profile](https://github.com/BeardoMattix)
+* If you have any questions, please reach out via email: christopher.mattix@gmail.com
 
-* `POST /api/notes` should receive a new note to save on the request body, add it to the `db.json` file, and then return the new note to the client. You'll need to find a way to give each note a unique id when it's saved (look into npm packages that could do this for you).
+## License
+[MIT](https://opensource.org/licenses/MIT)
 
-
-## Bonus
-
-You haven’t learned how to handle DELETE requests, but this application offers that functionality on the front end. As a bonus, try to add the DELETE route to the application using the following guideline:
-
-* `DELETE /api/notes/:id` should receive a query parameter that contains the id of a note to delete. To delete a note, you'll need to read all notes from the `db.json` file, remove the note with the given `id` property, and then rewrite the notes to the `db.json` file.
-
-
-## Grading Requirements
-
-This homework is graded based on the following criteria: 
-
-
-### Technical Acceptance Criteria: 40%
-
-* Satisfies all of the preceding acceptance criteria plus the following:
-
-  * Application front end must connect to an Express.js back end.
-
-  * Application back end must store notes that have a unique id in a JSON file.
-
-  * Application must be deployed to Heroku.
-
-
-### Deployment: 36%
-
-* Application deployed at live URL.
-
-* Application loads with no errors.
-
-* Application GitHub URL submitted.
-
-* GitHub repository contains application code.
-
-
-### Application Quality: 11%
-
-* Application console is free of errors.
-
-
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality README file with description, screenshot, and link to deployed application.
-
-
-### Bonus: +10 Points
-
-* Application allows users to delete notes.
-
-
-## Review
-
-You are required to submit BOTH of the following for review:
-
-* The URL of the functional, deployed application.
-
-* The URL of the GitHub repository, with a unique name and a README describing the project.
-
-- - -
-© 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+![badge](https://img.shields.io/static/v1?label=License&message=MIT&color=success)
